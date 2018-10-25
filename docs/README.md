@@ -24,9 +24,9 @@ The viewer is able to change the display language on the fly.
 
 ![List of Nameko](screenshots/list_jp.PNG)
 ![List of Nameko](screenshots/list_en.PNG)
-![Nameko Detail](screenshots/list_jp.PNG)
-![Nameko Detail](screenshots/list_en.PNG)
-![Nameko Detail](screenshots/list_af.PNG)
+![Nameko Detail](screenshots/nameko_jp.PNG)
+![Nameko Detail](screenshots/nameko_en.PNG)
+![Nameko Detail](screenshots/nameko_af.PNG)
 
 The nameko list is a flowable data grid.
 
