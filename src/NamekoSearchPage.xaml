@@ -1,0 +1,21 @@
+﻿<Page x:Class="NamekoPedia.src.NamekoSearchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:NamekoPedia.src">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="NeoNamekoDisplay.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <ListBox ItemTemplate="{StaticResource ResourceKey=NeoNamekoListTemplate}" ItemsSource="{Binding Path=NamekoList, RelativeSource={RelativeSource AncestorType=local:NamekoSearchPage}}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" >
+        <ListBox.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel Orientation="Horizontal"/>
+            </ItemsPanelTemplate>
+        </ListBox.ItemsPanel>
+    </ListBox>
+</Page>

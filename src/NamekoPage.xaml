@@ -1,0 +1,14 @@
+﻿<DockPanel x:Class="NamekoPedia.src.NamekoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:NamekoPedia.src">
+    <DockPanel.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="NeoNamekoDisplay.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </DockPanel.Resources>
+
+    <ScrollViewer x:Name="nmkview" ContentTemplate="{StaticResource ResourceKey=NeoNamekoFullTemplate}" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"/>
+</DockPanel>
